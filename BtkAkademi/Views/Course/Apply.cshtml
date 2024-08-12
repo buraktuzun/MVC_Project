@@ -1,0 +1,40 @@
+@model Candidate
+
+
+<div class="display-6">
+    Apply
+</div>
+
+<form method="post" action="/course/apply">
+    <div class="form-group my-2">
+        <label>Email</label>
+        <input name="Email" class="form-control">
+    </div>
+    <div class="form-group my-2">
+        <label>First Name</label>
+        <input name="FirstName" class="form-control">
+    </div>
+    <div class="form-group my-2">
+        <label>Last Name</label>
+        <input name="LastName" class="form-control">
+    </div>
+    <div class="form-group my-2">
+        <label>Age</label>
+        <select id="mySelect" name="Age" class="form-control">
+        </select>
+    </div>
+
+    <fieldset>
+        <legend>Select One Course</legend>
+        <p><input id="mvc" type="radio" name="SelectedCourse" value="ASP.Net Core MVC">ASP.Net Core MVC </input></p>
+        <p><input id="api" type="radio" name="SelectedCourse" value="ASP.Net Core API">ASP.Net Core API </input></p>
+        <p><input id="blazor" type="radio" name="SelectedCourse" value="Blazor">Blazor </input></p>
+    </fieldset>
+
+    <div>
+        <button class="btn btn-primary" type="submit">Apply</button>
+        <a class="btn btn-warning" href="/">Home</a>
+    </div>
+
+
+</form>
